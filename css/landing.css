@@ -4,6 +4,10 @@
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
     font-family: 'Jost', sans-serif;
     font-size: 40px;
@@ -27,13 +31,19 @@ button:hover {
 }
 
 #overlay {
-    display: none;
+    visibility: hidden;
     
     position: fixed;
     z-index: 1;
     
     height: 100vw;
     width: 100%;
+    
+    opacity: 0;
+    
+    background-color: #1d1d1d;
+    
+    transition: opacity 1s;
 }
 
 #navMenu {
@@ -50,7 +60,18 @@ button:hover {
     height: 100vh;
     width: 400px;
     
-    background-color: green;
+    background-color: #3a3f45;
+    
+    transition: margin 0.5s;
+}
+
+#navMenu h1:hover {
+    color: #b1776c;
+}
+
+.navVisible {
+    visibility: visible;
+    opacity: 0.5;
 }
 
 #navMenu a {
@@ -58,7 +79,7 @@ button:hover {
     padding-bottom: 5px;
 }
 
-#closeButton {
+#closeButton { 
     position: absolute;
     top: 20px;
     right: 20px;
@@ -67,15 +88,23 @@ button:hover {
     
     height: 20px;
     width: 20px;
+    
+    cursor: pointer;
 }
 
 #navButton {
     position: fixed;
-    top: 40px;
-    right: 30px;
+    top: 35px;
+    right: 25px;
     
     height: 40px;
     width: 40px;
+    
+    padding: 5px;
+    
+    cursor: pointer;
+    
+    transition: background-color 1s;
 }
 
 #header {
