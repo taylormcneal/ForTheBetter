@@ -4,7 +4,31 @@
     color: white;
 }
 
+h1 {
+    font-family: 'Jost', sans-serif;
+    font-size: 40px;
+}
+
+h2, p {
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    outline: none;
+    background-color: #b1776c;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #D09664;
+}
+
 #overlay {
+    display: none;
+    
     position: fixed;
     z-index: 1;
     
@@ -71,18 +95,194 @@
     height: 80px;
 }
 
-#bandLogo {
+#headerContent {
     position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
+    width: 75%;
     left: 0;
     right: 0;
-    
-    width: 80%;
+    margin: auto;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
 }
 
-body {
-    height: 5000px;
+#header h2 {
+    font-size: 30px;
+}
+
+#bandLogo {
+    width: 100%;
+}
+
+.bodyContent {
+    margin: auto;
+    padding: 50px 0;
+    width: 80%;
+    text-align: center;
+    max-width: 800px;
+}
+
+.bodyBackground {
+    width: 100%;
+}
+
+.scrollingBackground {
+    background-image: url(../images/album_dark.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#videos {
+    max-width: 800px;
+    padding-bottom: 100px;
+}
+
+#videos h1, #videos h2 {
+    color: #1d1d1d;
+}
+
+.videoWrapper {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    margin-top: 50px;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#store table {
+    width: 100%;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#store table td {
+    width: 50%;
+}
+
+#merchImage {
+    width: 100%;
+}
+
+#dates h2 a {
+    color: #1d1d1d;
+}
+
+#dates table td, #dates h1, #dates h2 {
+    color: #1d1d1d;
+}
+
+#dates table {
+    margin: auto;
+    width: 100%;
+    text-align: left;
+    max-width: 800px;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+#dates table tr {
+    border: none;
+    border-top: 2px solid black;
+}
+
+#dates table tr:nth-of-type(1) {
+    border: none;
+}
+
+#dates table tr:hover {
+    background-color: #EEE;
+}
+
+#dates table td {
+    padding: 10px 0;
+}
+
+#dates table td:nth-of-type(2) {
+    width: 100px;
+}
+
+#dates table span {
+    float: right;
+    color: #1d1d1d;
+    padding-right: 20px;
+}
+
+#dates b {
+    color: #3a3f45;
+}
+
+#newsletter h1 {
+    color: #1d1d1d;
+    margin-bottom: 25px;
+}
+
+#newsletter input {
+    font-size: 20px;
+    padding: 5px;
+    color: #1d1d1d;
+    width: 65%;
+}
+
+#newsletter input:focus {
+    outline: none;
+}
+
+#contact {
+    padding-bottom: 100px;
+}
+
+#footerBackground {
     background-color: #1D1D1D;
+}
+
+.socialIcon {
+    display: inline-block;
+    margin: auto;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+}
+
+#facebook {
+    background-image: url(../images/facebook_icon.png);
+}
+
+#facebook:hover {
+    background-image: url(../images/facebook_icon_focus.png);
+}
+
+#insta {
+    background-image: url(../images/instagram_icon.png);
+}
+
+#insta:hover {
+    background-image: url(../images/instagram_icon_focus.png);
+}
+
+#twitter {
+    background-image: url(../images/twitter_icon.png);
+}
+
+#twitter:hover {
+    background-image: url(../images/twitter_icon_focus.png);
+}
+
+#youtube {
+    background-image: url(../images/youtube_icon.png);
+}
+
+#youtube:hover {
+    background-image: url(../images/youtube_icon_focus.png);
 }

@@ -9,7 +9,10 @@
     
     <link rel="icon" href="images/brain_icon_black.png">
     
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/landing.css">
+    
+    <script src="js/functions.js"></script>
     
 </head>
     
@@ -31,18 +34,117 @@
     
     <div id="header">
         <img id="headerLogo" src="images/brain_icon.png">
-        <img id="bandLogo" src="images/band_logo.png">
+        <div id="headerContent">
+            <img id="bandLogo" src="images/band_logo.png">
+            <h2>New EP "Brain Lock" Out Now</h2>
+            
+            <br>
+            
+            <button>Apple Music</button>
+            <button>Spotify</button>
+        </div>
     </div>
     
-    <div>YouTube</div>
-    <div>Store</div>
-    <div>Show Dates</div>
-    <div>Newsletter</div>
-    <div>About</div>
-    <div>Contact</div>
-    <div>Socials</div>
+    <div class="bodyContent" id="videos">
+        <h2>TITLE OF YOUTUBE VIDEO</h2>
+        <div class="videoWrapper">
+            <iframe src="https://www.youtube.com/embed/rA56B4JyTgI" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
     
-    <div>Footer</div>
+    <div class="bodyBackground scrollingBackground">
+        <div class="bodyContent" id="about">
+            <h1>FØR THE BETTER</h1>
+
+            <br><br>
+
+            <p>FØR THE BETTER makes music for those who struggle with mental illness, uphill battles, and broken connections. The band:</p>
+            <p><b>Craig Stanley</b> (Vocals)</p>
+            <p><b>Jake Pomeroy</b> (Guitar &amp; Vocals)</p>
+            <p><b>Max Lalwani</b> (Drums)</p>
+            <p>drive themselves with ambition and dedication to sharpen their name as FØR THE BETTER.</p>
+
+            <br><br>
+
+            <p>Brain Lock (2020), the band’s first EP, is an introduction into the life of those who struggle with obsessive-compulsive behaviors. Through diagnosis, members Craig Stanley and Jake Pomeroy both suffer from obsessive-compulsive disorder, also known as OCD. The term “brain lock” is used as a metaphor; when the brain is unable to control thoughts, or actions while in a repetitive compulsion. FØR THE BETTER teamed up with producer Steve Sopchak, credited with several Billboard Top 200 charting albums, for the six songs that comprise Brain Lock. The concept EP delivers an open conversation to those on their way to overcoming defeat with great triumph.</p>
+            
+            <br>
+            
+        </div>
+    </div>
+    
+    <div class="bodyContent" id="dates">
+        <h1>SHOW DATES</h1>
+        
+        <br>
+        
+        <h2>Visit <a href="https://www.bandsintown.com/" target="_blank">BandsInTown</a> to See All Show Times and Locations</h2>
+        
+        <br><br>
+        
+        <table>
+        <tr>
+            <td>Fri, Jun 15 <b>Heinz Field</b><span>Pittsburgh, PA</span></td>
+            <td><button>Tickets</button></td>
+        </tr>
+        <tr>
+            <td>Fri, Jun 22 <b>Hollywood Amphitheatre</b><span>St. Louis, MO</span></td>
+            <td><button>Tickets</button></td>
+        </tr>
+        <tr>
+            <td>Sat, Jun 30 <b>MGM Grand Hotel</b><span>Las Vegas, NV</span></td>
+            <td><button>Tickets</button></td>
+        </tr>
+        <tr>
+            <td>Fri, Jul 3 <b>Paramount Theatre</b><span>Seattle, WA</span></td>
+            <td><button>Tickets</button></td>
+        </tr>
+        </table>
+    </div>
+    
+    <div class="bodyBackground scrollingBackground">
+        <div class="bodyContent" id="store">
+            <table>
+                <tr>
+                    <td><img id="merchImage" src="images/merch.png"></td>
+                    <td><h1>Official Merch</h1><p>Get the latest collection of FØR THE BETTER merch available right now.</p><br><br><a href="https://forthebetter.bigcartel.com/" target="_blank"><button>Shop Now</button></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div class="bodyContent" id="newsletter">
+        <h1>SIGN UP FOR OUR NEWSLETTER</h1>
+        <input type="text" id="newsletterEmail" placeholder="Enter Your Email">
+        <button>Join Now</button>
+    </div>
+    
+    <div class="bodyBackground scrollingBackground">
+        <div class="bodyContent" id="contact">
+            <h1>Contact</h1>
+            
+            <br><br>
+
+            <h2><b>Management</b></h2>
+            <p>forthebettermgmt@gmail.com</p>
+            
+            <br><br>
+
+            <h2><b>Booking</b></h2>
+            <p>forthebettermgmt@gmail.com</p>
+        </div>
+    </div>
+    
+    <div class="bodyBackground" id="footerBackground">
+        <div class="bodyContent" id="footer">
+            <a href="https://www.facebook.com/forthebetter" target="_blank"><div class="socialIcon" id="facebook"></div></a>
+            <a href="https://www.instagram.com/forthebetterband/" target="_blank"><div class="socialIcon" id="insta"></div></a>
+            <a href="https://twitter.com/forthebetter" target="_blank"><div class="socialIcon" id="twitter"></div></a>
+            <a href="https://www.youtube.com/channel/UCbmQM-g0NBlCpIO3_tAPWrw" target="_blank"><div class="socialIcon" id="youtube"></div></a>
+
+            <p>&copy; Copyright FØR THE BETTER 2020. All rights reserved.</p>
+        </div>
+    </div>
     
 </body>
 </html>
