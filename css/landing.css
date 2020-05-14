@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#overlay {
+    position: fixed;
+    z-index: 1;
+    
+    height: 100vw;
+    width: 100%;
+}
+
+#navMenu {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    
+    margin-right: -440px;
+    
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    height: 100vh;
+    width: 400px;
+    
+    background-color: green;
+}
+
+#navMenu a {
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+#closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+    padding: 10px;
+    
+    height: 20px;
+    width: 20px;
+}
+
+#navButton {
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    
+    height: 40px;
+    width: 40px;
+}
+
+#header {
+    height: 100vh;
+    
+    background-image: url("../images/album_cover.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#headerLogo {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    
+    height: 80px;
+}
+
+#bandLogo {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    width: 80%;
+}
+
+body {
+    height: 5000px;
+    background-color: #1D1D1D;
+}
