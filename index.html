@@ -10,8 +10,10 @@
     <link rel="icon" href="images/brain_icon_black.png">
     
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/landing.css">
     
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 851px)" href="css/landing.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 850px)" href="css/small_landing.css">
+          
     <script src="js/functions.js"></script>
     
 </head>
@@ -23,13 +25,13 @@
     <img id="navButton" src="images/nav_icon.png" onclick="openNavigation()">
     <div id="navMenu">
         <img id="closeButton" src="images/close_icon.png" onclick="closeNavigation()">
-        <a href="#header" onclick="closeNavigation()"><h1>Home</h1></a>
-        <a href="#videos" onclick="closeNavigation()"><h1>Videos</h1></a>
-        <a href="#about" onclick="closeNavigation()"><h1>About</h1></a>
-        <a href="#dates" onclick="closeNavigation()"><h1>Dates</h1></a>
-        <a href="#store" onclick="closeNavigation()"><h1>Shop</h1></a>
-        <a href="#newsletter" onclick="closeNavigation()"><h1>Newsletter</h1></a>
-        <a href="#contact" onclick="closeNavigation()"><h1>Contact</h1></a>
+        <a href="#header" onclick="closeNavigation()"><p>Home</p></a>
+        <a href="#videos" onclick="closeNavigation()"><p>Videos</p></a>
+        <a href="#about" onclick="closeNavigation()"><p>About</p></a>
+        <a href="#dates" onclick="closeNavigation()"><p>Dates</p></a>
+        <a href="#store" onclick="closeNavigation()"><p>Shop</p></a>
+        <a href="#newsletter" onclick="closeNavigation()"><p>Newsletter</p></a>
+        <a href="#contact" onclick="closeNavigation()"><p>Contact</p></a>
     </div>
     
     <div id="header">
@@ -40,8 +42,8 @@
             
             <br>
             
-            <button>Apple Music</button>
-            <button>Spotify</button>
+            <button class="lightButton">Apple Music</button>
+            <button class="lightButton">Spotify</button>
         </div>
     </div>
     
@@ -54,12 +56,13 @@
     
     <div class="bodyBackground scrollingBackground">
         <div class="bodyContent" id="about">
-            <h1>FØR THE BETTER</h1>
+            <h1>ABOUT</h1>
 
             <br><br>
 
             <p>FØR THE BETTER makes music for those who struggle with mental illness, uphill battles, and broken connections. The band:</p>
             <p><b>Craig Stanley</b> (Vocals)</p>
+            <p><b>Kris Rank</b> (Bass)</p>
             <p><b>Jake Pomeroy</b> (Guitar &amp; Vocals)</p>
             <p><b>Max Lalwani</b> (Drums)</p>
             <p>drive themselves with ambition and dedication to sharpen their name as FØR THE BETTER.</p>
@@ -104,12 +107,15 @@
     
     <div class="bodyBackground scrollingBackground">
         <div class="bodyContent" id="store">
-            <table>
-                <tr>
-                    <td><img id="merchImage" src="images/merch.png"></td>
-                    <td><h1>Official Merch</h1><p>Get the latest collection of FØR THE BETTER merch available right now.</p><br><br><a href="https://forthebetter.bigcartel.com/" target="_blank"><button>Shop Now</button></a></td>
-                </tr>
-            </table>
+            <div id="storeLeft"><img id="merchImage" src="images/merch.png"></div>
+            <div id="storeRight">
+                <h1>Official Merch</h1>
+                <p>Get the latest collection of FØR THE BETTER merch available right now.</p>
+                <br><br>
+                <a href="https://forthebetter.bigcartel.com/" target="_blank">
+                    <button class="lightButton">Shop Now</button>
+                </a>
+            </div>
         </div>
     </div>
     
@@ -141,6 +147,8 @@
             <a href="https://www.instagram.com/forthebetterband/" target="_blank"><div class="socialIcon" id="insta"></div></a>
             <a href="https://twitter.com/forthebetter" target="_blank"><div class="socialIcon" id="twitter"></div></a>
             <a href="https://www.youtube.com/channel/UCbmQM-g0NBlCpIO3_tAPWrw" target="_blank"><div class="socialIcon" id="youtube"></div></a>
+            
+            <br><br>
 
             <p>&copy; Copyright FØR THE BETTER 2020. All rights reserved.</p>
         </div>

@@ -8,7 +8,6 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: #1d1d1d;
 }
 
 h1 {
@@ -40,7 +39,7 @@ button:hover {
     position: fixed;
     z-index: 1;
     
-    height: 100vw;
+    height: 100vh;
     width: 100%;
     
     opacity: 0;
@@ -77,11 +76,6 @@ button:hover {
     color: #888;
 }
 
-.navVisible {
-    visibility: visible;
-    opacity: 0.5;
-}
-
 #navMenu a {
     text-decoration: none;
     padding-bottom: 5px;
@@ -102,6 +96,7 @@ button:hover {
 
 #navButton {
     position: fixed;
+    z-index: 1;
     top: 35px;
     right: 25px;
     
@@ -117,11 +112,11 @@ button:hover {
 
 #header {
     height: 100vh;
+    width: 100vw;
     
     background-image: url("../images/album_cover.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 
 #headerLogo {
@@ -134,7 +129,7 @@ button:hover {
 
 #headerContent {
     position: absolute;
-    width: 75%;
+    width: 90%;
     left: 0;
     right: 0;
     margin: auto;
@@ -150,6 +145,7 @@ button:hover {
 #header h2 {
     font-family: 'TS Block Bold', sans-serif;
     transform: scale(1, 1.3);
+    font-size: 10pt;
 }
 
 #bandLogo {
@@ -159,7 +155,7 @@ button:hover {
 .bodyContent {
     margin: auto;
     padding: 50px 0;
-    width: 80%;
+    width: 90%;
     text-align: center;
     max-width: 800px;
 }
@@ -171,7 +167,7 @@ button:hover {
 .scrollingBackground {
     background-image: url(../images/album_dark.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    width: 100vw;
     background-position: center;
 }
 
@@ -200,27 +196,8 @@ iframe {
     border: 0;
 }
 
-#store {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-
-#storeLeft {
-    display: inline-block;
-    float: left;
-    width: 50%;
-}
-
 #merchImage {
     width: 100%;
-}
-
-#storeRight {
-    display: inline-block;
-    width: 50%;
-    text-align: left;
-    vertical-align: middle;
 }
 
 #dates h2 a {
@@ -261,14 +238,14 @@ iframe {
     width: 100px;
 }
 
-#dates table span {
-    float: right;
+#dates span {
     color: #1d1d1d;
-    padding-right: 20px;
+    display: block;
 }
 
 #dates b {
     color: #3a3f45;
+    display: block;
 }
 
 #newsletter h1 {
