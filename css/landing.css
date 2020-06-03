@@ -149,6 +149,7 @@ button:hover {
 #header h2 {
     font-family: 'TS Block Bold', sans-serif;
     transform: scale(1, 1.3);
+    letter-spacing: 2px;
 }
 
 #bandLogo {
